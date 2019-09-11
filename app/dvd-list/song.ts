@@ -4,5 +4,5 @@ export interface ISong {
   serialNo: number;
   length: number;
   pic: string;
-  rating : number;
+  rating: number;
 }

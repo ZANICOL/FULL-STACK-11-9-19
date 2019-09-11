@@ -13,6 +13,7 @@ export class DvdListComponent implements OnInit {
   dvdOwner: string = "Your Name";
   dvdPicUrl: string = "https://www.eden.co.uk/images/500/5051159789242.jpg";
   _dvdFilter: string = '';
+  rating : 2;
 
   showImage: boolean = true;
 
@@ -23,12 +24,22 @@ export class DvdListComponent implements OnInit {
       name: "Dookie",
       serialNo: 1,
       length: 51,
-      pic: "https://ksassets.timeincuk.net/wp/uploads/sites/55/2014/01/75.greenday_dookie_151013-1.jpg"
+      pic: "https://ksassets.timeincuk.net/wp/uploads/sites/55/2014/01/75.greenday_dookie_151013-1.jpg",
+      rating: 2
     },
     {
       name: "the song name 2",
       serialNo: 2,
-      length: 78, pic: "https://pbs.twimg.com/media/DWgS7UXW4AATjc3.jpg"
+      length: 78, pic: "https://pbs.twimg.com/media/DWgS7UXW4AATjc3.jpg",
+      rating : 2
+
+    },
+    {
+      name: "the song name 2",
+      serialNo: 2,
+      length: 78, pic: "https://pbs.twimg.com/media/DWgS7UXW4AATjc3.jpg",
+      rating : 2
+
     }];
 
   constructor() {
