@@ -14,6 +14,7 @@ export class DvdListComponent implements OnInit {
   dvdPicUrl: string = "https://www.eden.co.uk/images/500/5051159789242.jpg";
   _dvdFilter: string = '';
   rating : 2;
+  title : string;
 
   showImage: boolean = true;
 
@@ -77,6 +78,10 @@ export class DvdListComponent implements OnInit {
           this.filteredSongs = this.songsAry;
         }
       
+    }
+
+    onRatingClicked(message:string):void{
+this.title = 'Product list: ' + message;
     }
 
   ngOnInit() {
